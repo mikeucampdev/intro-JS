@@ -67,6 +67,57 @@ var nombre;
  console.log(typeof String (num));
  console.log((num+''));
  console.log(typeof(num+''));
+
+ var nombre = 'Mike';
+ console.log(nombre);
+
+ var apellido = 'Montemayor';
+ 
+
+ var profesion = 'Desarrollador web Full Stack';
+ console.log (nombre + '' + apellido + '' + profesion);
+
+ //Declaro un tipo de dato String
+
+ var numero = "150";
+ console.log(numero);
+
+ console.log (+numero);
+ console.log (typeof(+numero));  //Explicacion implicita
+
+
+ console.log (Number(numero));       //Explicacion expl icita 
+ console.log (typeof(Number(numero)));
+
+ //Declaro un tipo de dato Numerico
+
+ var condicion2 = 1;
+
+ //Declaro un tipo de datos string
+ var condicion 
+
+ var numero = "150";
+ console.log(numero);
+
+
+ onsole.log (+numero);
+ console.log (typeof(+numero));  //Explicacion implicita
+
+
+ console.log (Number(numero));       //Explicacion expl icita 
+ console.log (typeof(Number(numero)));
+
+ //Declaro un tipo de dato String
+
+ var numero = "150";
+ console.log(numero);
+
+ console.log(+numero);
+ console.log(typeof(+numero));
+
+ console.log(Number (+numero));
+
+
    
 
 
