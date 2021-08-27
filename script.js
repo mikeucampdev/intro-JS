@@ -100,14 +100,14 @@ var nombre;
  console.log(numero);
 
 
- onsole.log (+numero);
+ console.log (+numero);
  console.log (typeof(+numero));  //Explicacion implicita
 
 
  console.log (Number(numero));       //Explicacion expl icita 
  console.log (typeof(Number(numero)));
 
- //Declaro un tipo de dato String
+
 
  var numero = "150";
  console.log(numero);
@@ -117,6 +117,48 @@ var nombre;
 
  console.log(Number (+numero));
 
+ //ejemplos de uso de var
+
+ var variable = 5;
+ {
+     console.log('inside', variable);
+     var variable = 10 ;
+ }
+
+
+ console.log('outside', variable);
+ variable = variable * 2;
+ console.log('changed', variable);
+
+
+ //Ejemplos de uso de let
+
+ let variable = 5; {
+     console.log('inside', variable);
+     let variable  = 10 ;
+ }
+
+console.log ('outside', variable);
+variable = variable * 2;
+console.log ('changed', variable );
+
+//Ejemplo de uso de const
+
+const variable = 5;
+variable = variable * 2;
+console.log('changed',variable);
+
+
+//Nombres pronunciables y expresivos
+1
+2
+//bad
+const yyyymmdstr = moment().format('YYYY/MM/DD');
+3
+4
+5
+//better
+const currentDate = moment().format('YYYY/MM/DD');
 
    
 
