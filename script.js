@@ -192,17 +192,43 @@ getUser()*/
 //CONDICIONALES = NOS PERMITE EVALUAR UNA CONDICION
 
 
- if(Condicion){
-     //se ejecuta si es true
-     var respuesta=1;
-     if (respuesta===3){
-         console.log('Respuesta correcta')
+ 
+    var respuesta = 2;
+    var mensaje = ' ';
+     
+     if (respuesta === 3 ){
+         console.log ('Respuesta correcta');
      }
- }  else if(respuesta===2){
-     console.log('Casi!!')
+
+   else if(respuesta % 2 == 0){
+     console.log('La respuesta es par');
+     mensaje='Entro como par';
+ } else if (respuesta == 2){
+     console.log ('Casi');
+
+     
+
+ } else{
+     console.log ('Respuesta incorrecta')
+     mensaje='Todo mal';
  }
 
- else{
-     //se ejecuta si la condicion es false
+ console.log(mensaje);
 
+ //Switch
+
+ var respuesta = 2;
+
+ switch(respuesta) {
+     case 3:
+     console.log('Respuesta correcta');
+
+     case 2:
+        console.log('casi');
+        'break';
+
+
+     default:
+         console.log('mal por burro');
  }
+
