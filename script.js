@@ -232,3 +232,25 @@ getUser()*/
          console.log('mal por burro');
  }
 
+
+ //Funciones
+
+ function miPrimeraFuncion(nombre){
+     console.log('Hola, que tal, me estoy fucking desvelando' + nombre);
+ }
+
+ miPrimeraFuncion('Mikewasousky');
+ miPrimeraFuncion(156);
+ miPrimeraFuncion(true);
+
+
+ var segundaFuncion = function (edad) {
+     console.log('Esta es una expresion de funcion' + edad);
+ }
+
+ segundaFuncion(31);
+
+
+ (function (nombre){
+     console.log('Hola, fucking maestro que explica fucking rapido' + nombre);
+ }) ('ivan')
