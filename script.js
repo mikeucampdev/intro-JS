@@ -133,9 +133,9 @@ var nombre;
 
  //Ejemplos de uso de let
 
- let variable = 5; {
+ let variables = 5; {
      console.log('inside', variable);
-     let variable  = 10 ;
+     let variables  = 10 ;
  }
 
 console.log ('outside', variable);
@@ -144,11 +144,11 @@ console.log ('changed', variable );
 
 //Ejemplo de uso de const
 
-const variable = 5;
+const variabless = 5;
 variable = variable * 2;
 console.log('changed',variable);
 
-
+/*
 //Nombres pronunciables y expresivos
 1
 2
@@ -161,6 +161,48 @@ const yyyymmdstr = moment().format('YYYY/MM/DD');
 const currentDate = moment().format('YYYY/MM/DD');
 
    
+//Evitar que los nombres contengan información técnica
+1
+2
+//bad
+class AbstractUser('1'){...}
+3
+4
+5
+//better
+class User(){...} 
 
 
- 
+//Léxico coherente
+1
+2
+3
+4
+//bad
+getUserInfo();
+getClientData();
+getCustomerRecord();
+5
+6
+7
+//better
+getUser()*/
+
+
+//CONDICIONALES = NOS PERMITE EVALUAR UNA CONDICION
+
+
+ if(Condicion){
+     //se ejecuta si es true
+     var respuesta=1;
+     if (respuesta===3){
+         console.log('Respuesta correcta')
+     }
+ }  else if(respuesta===2){
+     console.log('Casi!!')
+ }
+
+ else{
+     //se ejecuta si la condicion es false
+
+ }
