@@ -20,3 +20,10 @@ alert('Pedro GOnzalez')
 permiso("Roberto",15)//"Roberto, no puedes solicitar el permiso"
 permiso("Mario",36)//"MArio, puedes solicitar tu permiso"
 //se puede usar las condicionales if/else
+
+
+
+promedio (cal1, cal2, cal3, cal4,cal5){
+    var resultado = (cal1 + cal2 + cal3 + cal4 + cal5)
+    console.log (resultado);
+}

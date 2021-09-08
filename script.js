@@ -148,45 +148,7 @@ const variabless = 5;
 variable = variable * 2;
 console.log('changed',variable);
 
-/*
-//Nombres pronunciables y expresivos
-1
-2
-//bad
-const yyyymmdstr = moment().format('YYYY/MM/DD');
-3
-4
-5
-//better
-const currentDate = moment().format('YYYY/MM/DD');
 
-   
-//Evitar que los nombres contengan información técnica
-1
-2
-//bad
-class AbstractUser('1'){...}
-3
-4
-5
-//better
-class User(){...} 
-
-
-//Léxico coherente
-1
-2
-3
-4
-//bad
-getUserInfo();
-getClientData();
-getCustomerRecord();
-5
-6
-7
-//better
-getUser()*/
 
 
 //CONDICIONALES = NOS PERMITE EVALUAR UNA CONDICION
@@ -254,3 +216,47 @@ getUser()*/
  (function (nombre){
      console.log('Hola, fucking maestro que explica fucking rapido' + nombre);
  }) ('ivan')
+
+
+
+ // SORT
+
+arreglo.sort(function(primero, segundo){
+    /*retornar 0 si son igules
+    retornar val < 0 si el primero va antes que el segundo
+    retornar val > 0 si el segundo va antes que el primero
+    */
+
+    return primero - segundo;
+   
+})
+
+ var nums = [1,2,3,4,5];
+
+ var num = [1,2,3,4,5,10,20,30];
+
+ nums.sort();
+
+ nums.sort (function (primerElemento, segundoElemento){
+     //Algoritmo que evalue elemntos.
+     return segundoElemento-primerElemento;
+ })
+
+
+ //Filter
+
+ function impares (numero){
+
+     /* if (numero%2!==0) {
+         return true;
+     }
+
+     else{
+         return false;
+     }*/
+
+     return numero < 10;
+ }
+ var numerosImpares=nums.filter(impares);
+
+ console.log(numerosImpares);
