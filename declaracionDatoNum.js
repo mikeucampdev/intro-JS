@@ -1,0 +1,1 @@
+var condicion2 = 1;

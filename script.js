@@ -221,15 +221,15 @@ console.log('changed',variable);
 
  // SORT
 
-arreglo.sort(function(primero, segundo){
+/**arreglo.sort(function(primero, segundo){
     /*retornar 0 si son igules
     retornar val < 0 si el primero va antes que el segundo
     retornar val > 0 si el segundo va antes que el primero
-    */
+   
 
     return primero - segundo;
    
-})
+}) */
 
  var nums = [1,2,3,4,5];
 
@@ -260,3 +260,22 @@ arreglo.sort(function(primero, segundo){
  var numerosImpares=nums.filter(impares);
 
  console.log(numerosImpares);
+
+
+ //MAp = metodo que permite hacer una modificacion a cada elemento del arreglo
+ var nombres= ['Ramon', 'Pedro','laura','Maria']
+ console.log (nombres);
+ console.log (
+ nums.map(function (elemento,indice){
+     return num + 10;
+    })
+ );
+
+ //reduce
+  var miNombre = ['Miguel', 'Hector'];
+  var nombreConcatenado = miNombre.reduce(function (acumulador,elemento) ){
+      return acumulador + '' elemento;
+  }, 'Nombre:')
+
+  console.log (nombreConcatenado);
+     
